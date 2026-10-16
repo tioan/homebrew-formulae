@@ -9,7 +9,7 @@ class KleinanzeigenBot < Formula
   # on every merge, which is a poor fit for Homebrew's immutable url+sha256
   # model. This formula intentionally tracks the pinned 2025-05-15 release.
   version "2025-05-15"
-  commit = "e7a3d46d25365054116bd6d221bf78baaddb4d76"
+  COMMIT = "e7a3d46d25365054116bd6d221bf78baaddb4d76".freeze
 
   on_arm do
     url "https://github.com/Second-Hand-Friends/kleinanzeigen-bot/releases/download/2025-05-15/kleinanzeigen-bot-darwin-arm64"
@@ -60,7 +60,7 @@ class KleinanzeigenBot < Formula
 
     <<~EOS
       #{browser_note}
-      This formula tracks the pinned "2025-05-15" release (commit #{commit}),
+      This formula tracks the pinned "2025-05-15" release (commit #{COMMIT}),
       the last dated release before upstream switched to rolling "latest" /
       "preview" tags that are force-moved on every merge. Newer fixes and
       features are not included until upstream cuts another dated release.

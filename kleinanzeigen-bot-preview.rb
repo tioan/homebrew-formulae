@@ -8,16 +8,16 @@ class KleinanzeigenBotPreview < Formula
   # SemVer releases (see https://github.com/Second-Hand-Friends/kleinanzeigen-bot/releases).
   # We therefore pin the sha256 of whatever "preview" currently points to;
   # bump `version` and both `sha256`s when upstream publishes a new build.
-  version "2026+37c7f52"
+  version "2026+9743f73"
 
   on_arm do
     url "https://github.com/Second-Hand-Friends/kleinanzeigen-bot/releases/download/preview/kleinanzeigen-bot-darwin-arm64"
-    sha256 "2f22a7b918f796b3d3c583fc29f6461248e039706c53a73f118cc283f3b01f7c"
+    sha256 "46feeb2d8af99aa5ab10128c1c304942a22764d1af19e55914b63f22e4974e9d"
   end
 
   on_intel do
     url "https://github.com/Second-Hand-Friends/kleinanzeigen-bot/releases/download/preview/kleinanzeigen-bot-darwin-amd64"
-    sha256 "3098dc7fe7e7edf2647e7c8e14fc5c8be66791650ba784670f26005e325ce176"
+    sha256 "f92bb3ef639617d617ce593c6e04cae71cd3fe8c2d2d9acd6106dda1bb13fc5a"
   end
 
   depends_on :macos
